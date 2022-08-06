@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: 'Poppins';font-size: 22px; */
+  font-family:Poppins,sans-serif;
 }
 header {
   position: absolute;
@@ -69,6 +71,14 @@ header {
   .header-about{
     padding-top: 0 !important;
   }
+  .job-text{
+    font-weight: 800;
+    text-decoration: none;
+    color: #ffff;
+    position: absolute;
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
 }
 
 
@@ -110,6 +120,14 @@ header {
     }
     .container-10 {
      
+    }
+    .job-text{
+      font-weight: 800;
+      text-decoration: none;
+      color: #ffff;
+      position: absolute;
+      font-size: 2.5rem ;
+      text-align: center;
     }
    
    
@@ -720,4 +738,21 @@ button {
 }
 .nav-up {
   top: -40px;
+}
+.job-text{
+  font-weight: 800;
+  text-decoration: none;
+  color: #ffff;
+  position: absolute;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.job-text2{
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffff;
+  position: absolute;
+  font-size: 1rem;
+  text-align: center;
+  top: 55%;
 }

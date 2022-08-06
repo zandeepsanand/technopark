@@ -147,3 +147,17 @@ li p:first-child{font-weight:800;font-size:24px;padding-top:12px;}
     position: relative;
     z-index: 100;
 }
+.end5{
+  width: 100%;
+    text-transform: uppercase;
+    /* color: #262626; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 56px;
+    font-weight: 700;
+    
+    display: flex;
+    position: relative;
+    z-index: 100;
+}
