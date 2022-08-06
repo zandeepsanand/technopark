@@ -8,14 +8,79 @@
 }
 header {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 70px;
+  left: 50px;
   width: 100%;
   padding: 0px 0px;
   z-index: 10000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: top 0.2s ease-in-out;
+}
+#navbar{
+  position:fixed;
+  top: 0px;
+  right: -400px;
+}
+@media screen and (max-width: 760px) {
+  #navbar{
+    display: none;
+  }
+  .display{
+    display: none;
+  }
+  header {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    padding: 0px 0px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.2s ease-in-out;
+    background-color: #111;
+  }
+  .navbar-toggler-icon{
+    color: #cccccc;
+  }
+  .mobile{
+   
+    justify-content: center;
+  }
+  .navbar-margin{
+    padding: 10%;
+  }
+  .end1{
+ display: none;
+  }
+  
+}
+.end1{
+  width: 100%;
+       top: 3px;
+       left: 10px;
+    /* color: #262626; */
+    justify-content: center;
+    align-items: center;
+      display: flex;
+       position: absolute;
+    z-index: 100;
+}
+
+@media screen and (max-width: 990px) {
+  .end1{
+    display: none;
+     }
+}
+
+.navbar-margin{
+  margin-left: -10%;
+}
+.navbar-dark{
+  right: 0;
 }
 
 header .logo {
@@ -583,6 +648,7 @@ button {
 }
 .gg {
   padding-bottom: 50px;
+  position: relative;
 }
 .bg {
   background-color: #111;
@@ -596,4 +662,23 @@ button {
 .container-10 {
   width: 35rem;
   height: 45rem;
+}
+.mix{
+  position: inherit;
+}
+#site-header {
+	position: fixed;
+
+	background: transparent;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	transition: all .3s ease;
+	box-shadow: 0 1px 25px rgba(0,0,0, .1);
+}
+#site-header.hide {
+	top: -52px;
+}
+.nav-up {
+  top: -40px;
 }
