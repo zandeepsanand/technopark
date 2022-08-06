@@ -63,7 +63,12 @@ header {
     height: 45rem !important;
   }
   
-  
+  .mob-text{
+    font-size: 5rem !important;
+  }
+  .header-about{
+    padding-top: 0 !important;
+  }
 }
 
 
@@ -294,14 +299,14 @@ header .logo {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0px 0px;
+ 
   z-index: 1000;
 }
 .large-text {
   position: inherit;
   font-weight: 800;
   font-size: 7rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   z-index: 10;
   margin-top: 50px;
@@ -315,7 +320,7 @@ header .logo {
 
 .font-about {
   color: #fff;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   letter-spacing: normal;
 }
@@ -586,7 +591,7 @@ button {
 }
 .show {
   padding-top: 2%;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 300;
   color: #cccccc;
