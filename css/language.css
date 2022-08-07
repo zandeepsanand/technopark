@@ -4,11 +4,23 @@ center{
 .switch {
   bottom: 0;
   right: 0;
+  padding-left: 10px;
 
-    position: fixed;
+    position: fixed !important;
     display: inline-block;
     /* margin: 0 5px; */
     z-index: 100000;
+  }
+  @media screen and (max-width: 760px) {
+    .switch {
+      bottom: 0;
+      right: 0;
+    
+        position: absolute;
+        display: inline-block;
+        /* margin: 0 5px; */
+        z-index: 10000;
+      }
   }
   
   .switch > span {
@@ -95,7 +107,7 @@ center{
     left: 4px;
     bottom: 4px;
     width: 48px;
-    background-color: #fff;
+    background-color: rgb(5, 2, 2);
     -webkit-border-radius: 52px;
     -moz-border-radius: 52px;
     -ms-border-radius: 52px;
