@@ -126,16 +126,37 @@ header {
      
     }
     .job-text{
-      font-weight: 800;
+      /* top: 0px; */
+
+      font-weight: 100;
       text-decoration: none;
       color: #ffff;
       position: absolute;
-      font-size: 2.5rem ;
+      font-size: 12px !important ;
+      text-align: center;
+    }
+    .imgg{
+      padding-top: 29px;
+    }
+    .job-text2{
+      font-weight: 100;
+      text-decoration: none;
+      color: #ffff;
+      position: absolute;
+      font-size: 10px !important ;
       text-align: center;
     }
    
    
     
+}
+.job-text3{
+  font-weight: 800;
+  text-decoration: none;
+  color: #ffff;
+  position: absolute;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .navbar-margin{
@@ -748,11 +769,11 @@ button {
   text-decoration: none;
   color: #ffff;
   position: absolute;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 .job-text2{
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   color: #ffff;
   position: absolute;
