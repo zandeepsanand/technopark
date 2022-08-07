@@ -21,8 +21,8 @@ header {
   transition: top 0.2s ease-in-out;
 }
 #navbar{
-  position:fixed;
-  top: 0px;
+  position:absolute;
+  top: -50px;
   right: -400px;
 }
 @media screen and (max-width: 760px) {
@@ -89,7 +89,7 @@ header {
 .end1{
   width: 100%;
        top: 3px;
-       left: 10px;
+       left: 0px;
     /* color: #262626; */
     justify-content: center;
     align-items: center;
@@ -305,7 +305,13 @@ header .logo {
   z-index: 999;
   position: relative;
 }
+.ss{
+  padding-left: 150px !important;
+}
 .img {
+  top: 0;
+  right: 0;
+  position: absolute;
 }
 .round {
   border-radius: 100%;
