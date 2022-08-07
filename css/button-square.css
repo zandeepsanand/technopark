@@ -75,63 +75,7 @@ p {
   .shadow-low, .widget-container {
     box-shadow: var(--shadow-style);
   }
-  
-  .container {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-sizing: border-box;
-  }
-  
-  .centered {
-    display: flex;
-    margin: min(10vh, 3rem) auto;
-  }
-  
-  .justify-content-center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .align-items-center {
-    align-items: center;
-  }
-  
-  .item-group * {
-    margin: 0.5rem 0.25rem 0 0;
-  }
-  .item-group *:last-child {
-    margin: 0.5rem 0 0;
-  }
-  
-  .widget {
-    --widget-bg-color: var(--container-color);
-    --widget-text-color: var(--app-text-color);
-    --widget-width: 320px;
-    --widget-height: 200px;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(var(--widget-width), 1fr));
-    grid-template-rows: masonry;
-    box-sizing: border-box;
-    font-size: 1rem;
-    min-height: var(--widget-height);
-    width: max(90%, 320px);
-  }
-  .widget-container {
-    display: inline-flex;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    font-size: 1rem;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    background-color: var(--widget-bg-color);
-    margin: 1rem 0 0;
-  }
+
   
   /**
   
