@@ -22,7 +22,7 @@ header {
 }
 #navbar{
   position:absolute;
-  top: -50px;
+  top: 0px;
   right: -400px;
 }
 @media screen and (max-width: 760px) {
@@ -66,7 +66,7 @@ header {
  display: none;
   }
   .dummy{
-    height: 45rem !important;
+    /* height: 45rem !important; */
   }
   
   .mob-text{
@@ -82,6 +82,10 @@ header {
     position: absolute;
     font-size: 1.5rem !important;
     text-align: center;
+  }
+  .container-10{
+    height: 45rem !important;
+
   }
 }
 
@@ -100,6 +104,9 @@ header {
 .md-block{
   position: relative;
   /* top: 100px; */
+}
+@media screen and (max-width: 1200px) {
+
 }
 @media screen and (max-width: 990px) {
   .end1{
@@ -660,6 +667,12 @@ button {
 @media screen and (max-width: 760px) {
   .l-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .dummy{
+    min-height: 45px !important;
+  }
+  .mob-res{
+   top:100px !important;
   }
 }
 
