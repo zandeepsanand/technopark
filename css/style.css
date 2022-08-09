@@ -7,6 +7,8 @@
   /* font-family: "Poppins", sans-serif; */
   /* font-family: 'Poppins';font-size: 22px; */
   font-family:Poppins,sans-serif;
+  scroll-behavior: smooth;
+  
 }
 .container55{
   max-width: 1200px;
