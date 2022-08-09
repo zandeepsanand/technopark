@@ -76,7 +76,7 @@ header {
     padding-top: 0 !important;
   }
   .job-text{
-    font-weight: 800;
+    font-weight: 500 !important;
     text-decoration: none;
     color: #ffff;
     position: absolute;
@@ -418,7 +418,7 @@ button {
   border: 1px solid #f77500;
   box-sizing: border-box;
   border-radius: 20px;
-  margin: 15px;
+  /* margin: 15px; */
 }
 /* card design  */
 .container-2 {
