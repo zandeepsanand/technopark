@@ -248,6 +248,7 @@ header .logo {
 }
 .overlap-about {
   z-index: -2 !important;
+  overflow-x: hidden;
 }
 
 .overlay {
