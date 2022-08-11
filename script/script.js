@@ -19,6 +19,10 @@ var animateButton = function(e) {
   var w = c.width = window.innerWidth,
       h = c.height = window.innerHeight,
       ctx = c.getContext( '2d' ),
+      // 39, 100%, 50%
+      // color: 'hsl(16, 88%, 54%)',
+      // full color 
+      // color: 'hsl(hue,100%,light%)'
       
       opts = {
         
@@ -32,7 +36,7 @@ var animateButton = function(e) {
         sparkDist: 10,
         sparkSize: 2,
         
-        color: 'hsl(16, 88%, 54%)',
+        color: 'hsl(hue,100%,light%)',
         baseLight: 50,
         addedLight: 10, // [50-10,50+10]
         shadowToTimePropMult: 6,
