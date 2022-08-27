@@ -325,24 +325,7 @@ font-size: 2rem;
 ">FINDE MEHR REQUISITEN</h5>
 
   </div>
-  <!-- <div class="container pb-5" style="overflow-x: hidden;">
-    <div class="row">
-    
-    </div>
-  </div> -->
-
-  <!-- <div class="container-home">
-    <div class="col-12 col-sm-12 col-lg-12 col-md-12 d-flex justify-content-center">
-      <div class="gg">
-
-
-
-      </div>
-    </div>
-
-
-
-  </div> -->
+ 
 
   <!-- new section  -->
 
@@ -376,9 +359,19 @@ font-size: 2rem;
       transform: translate(-50%);
     }
 
-    .game-button-active {
+    .game-button:active {
       background-color: #f7f7f7;
+      width: 140px;
+      height: 64px;
     }
+    .game-button:hover {
+      background-color: #f7f7f7;
+      width: 140px;
+      height: 64px;
+    }
+    .game-button:focus{
+    background:rgb(255, 255, 255);
+}
 
     .game-button {
       width: 140px;
@@ -391,16 +384,20 @@ font-size: 2rem;
       padding: 18px 16px;
       display: flex;
     }
+    
   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <div class="container landingpage">
 
-    <div class="game-selector"> <a href="#section2" class="game-button game-button-active"> <img src="./img/cod2.png" class="img-fluid" alt="Fortnite"> </a>
+    <div class="game-selector" > <a href="#section2" id="imagebutton"  class="game-button "> 
+      <img src="./img/cod3.png" id="imagebutton"  class="img-fluid" alt="Fortnite" onclick="myFunction()"> </a>
            <a href="#section3"
-        class="game-button"> <img src="./img/apex.png" alt="Apex Legends" class="img-fluid"> </a> 
+        class="game-button" id="imagebutton2"> <img src="./img/apex.png" id="imagebutton2" alt="Apex Legends" class="img-fluid" onclick="myFunction2()"> </a> 
       
          <a href="#section4"
-        class="game-button"> <img src="./img/Fortnite.png" class="img-fluid" alt="Fortnite"> </a> 
+        class="game-button" id="imagebutton3"> <img src="./img/Fortnite.png" id="imagebutton3" class="img-fluid" alt="Fortnite" onclick="myFunction3()"> </a> 
       </div>
 
 
