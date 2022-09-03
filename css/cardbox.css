@@ -1,11 +1,12 @@
 .container22 {
-  display: flex;
+  display: flex !important;
   position: relative;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 40px;
   z-index: 1000;
+
 }
 .container33{
   position: relative;
