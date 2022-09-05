@@ -40,10 +40,31 @@
     <!-- card  -->
   </head>
 
-<body class="about" style="overflow-x: hidden;">
-  <center>
+<body class="about" style="overflow-x: hidden;" onload="myFunction()">
+  <script>
+    function myFunction() {
+      const onpageLoad = localStorage.getItem("lang") || "";
+      console.log(onpageLoad);
+    if (onpageLoad === "fr_lang"){
+      $('.fr_lang').addClass("active-lang"); 
+            localStorage.setItem('lang', 'fr_lang');
+            $('.en_lang').removeClass("active-lang") ;
+    }else{
+      $('.en_lang').addClass("active-lang");
+            localStorage.removeItem('lang','fr_lang');
+            localStorage.setItem('lang', 'en_lang');
+             // Disable French
+            $('.fr_lang').removeClass("active-lang")
+    }
+    
+    
+    
+    }
+      
+
+    
    
-   </center>
+   </script>
   <div class="showcase">
    
     <canvas class="overlap overlap-about" id="c"></canvas>
@@ -94,11 +115,12 @@
           <!-- Right navigation -->
          
             <!-- <a class="nav-item nav-link" href="#">Sign in</a> -->
-            <div class="switch2">
-              <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox"  id="lang-switch" class="fr">
+            <div class="switch2" id="checkbox-container">
+              <input id="language-toggle" class="check-toggle check-toggle-round-flat"
+               type="checkbox"  id="lang-switch" class="fr"  >
               <label for="language-toggle"></label>
-              <span class="on fr" >EN</span>
-              <span class="off en">DE</span>
+              <span class="on fr"  >EN</span>
+              <span class="off en" >DE</span>
             </div>
   
           </div>
@@ -106,6 +128,68 @@
         </div>
       </div>
     </nav>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var checkbox = document.querySelector('input[type="checkbox"]');
+       
+        
+        $('.en_lang').addClass("active-lang");
+        $('#lang-switch .en').addClass("active-flag");
+        checkbox.addEventListener('change', function () {
+            
+          if (checkbox.checked) {
+            // do this
+           
+            // disable english 
+            $('.fr_lang').addClass("active-lang"); 
+            localStorage.setItem('lang', 'fr_lang');
+            $('.en_lang').removeClass("active-lang") ;
+
+             console.log('Checked');
+       
+       
+    
+          } else {
+            // do that
+            console.log('Not checked' );
+            $('.en_lang').addClass("active-lang");
+            localStorage.removeItem('lang','fr_lang');
+            localStorage.setItem('lang', 'en_lang');
+             // Disable French
+            $('.fr_lang').removeClass("active-lang")
+
+          }
+        });
+      });
+   
+      $(this).classList.add('active-lang')
+      if(onpageLoad != null && onpageLoad  == 'fr_lang'){
+       tSwitcher.checked = true;
+       console.log("engg")
+    } 
+    $(this).classList.add(onpageLoad);
+      
+    //   var tSwitcher = document.getElementById('lang-switch');
+    // let element = document.body;
+    
+    // let onpageLoad = localStorage.getItem("lang") || "";
+    // if(onpageLoad != null && onpageLoad  == 'en_lang'){
+    //   tSwitcher.checked = true;
+    // } 
+    // element.classList.add(onpageLoad);
+    
+    
+    // function themeToggle(){
+    //   console.log("checkkkkkkkkkkkkkkkk");
+    //   if(tSwitcher.checked){
+    //       localStorage.setItem('lang', 'en_lang');
+    //         element.classList.add('active-lang');
+    //     } else {
+    //       localStorage.setItem('lang', '');
+    //         element.classList.remove('active-lang');
+    //     }
+    // }
+    </script>
     <style>
       .sticky {
     position: fixed;
@@ -796,35 +880,14 @@ color: #878787;
 
 
 </style>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var checkbox = document.querySelector('input[type="checkbox"]');
-    
-    $('.en_lang').addClass("active-lang");
-    $('#lang-switch .en').addClass("active-flag");
-    checkbox.addEventListener('change', function () {
-        
-      if (checkbox.checked) {
-        // do this
-        console.log('Checked');
-        // disable english 
-        $('.fr_lang').addClass("active-lang"); 
-    console.log('Checked');
-   
-    $('.en_lang').removeClass("active-lang") 
 
-      } else {
-        // do that
-        console.log('Not checked' );
-        $('.en_lang').addClass("active-lang");
-    
-    // Disable French
-    $('.fr_lang').removeClass("active-lang")
-      }
-    });
-  });
-</script>
-  
+  <div class="container">
+    <div class="toggle-container" style="z-index: 10000;">
+      <input type="checkbox" id="dark-mode-switch" name="theme" onclick="themeToggle()"44 />
+      <label for="dark-mode-switch">Toggle</label>
+    </div>
+  </div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="./script/language.js"></script>
 <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
