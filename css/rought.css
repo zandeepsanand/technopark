@@ -57,8 +57,8 @@
 
   .game-button:hover {
     background-color: #f7f7f7;
-    width: 140px;
-    height: 64px;
+    width: 190px;
+    height: 90px;
   }
 
   .game-button:focus {
@@ -66,8 +66,8 @@
   }
 
   .game-button {
-    width: 140px;
-    height: 64px;
+    width: 190px !important;
+    height: 90px;
     color: #fff;
     background-color: #262626;
     border-radius: 8px;
