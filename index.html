@@ -55,12 +55,22 @@
 <body class="scroll" onload="myFunction()">
   <script>
     function myFunction() {
+      $('input').on('change', function() {
+    localStorage.input = $(this).is(':checked');
+    console.log($(this).is(':checked'));
+});
       const onpageLoad = localStorage.getItem("lang") || "";
       console.log(onpageLoad);
+
     if (onpageLoad === "fr_lang"){
       $('.fr_lang').addClass("active-lang"); 
             localStorage.setItem('lang', 'fr_lang');
             $('.en_lang').removeClass("active-lang") ;
+            $(function(){
+    var test = localStorage.input === 'true'? true: false;
+    $('input').prop('checked', test || false);
+});
+         
     }else{
       $('.en_lang').addClass("active-lang");
             localStorage.removeItem('lang','fr_lang');
@@ -69,7 +79,7 @@
             $('.fr_lang').removeClass("active-lang")
     }
     }
-  
+   
    </script>
 
   <header>
