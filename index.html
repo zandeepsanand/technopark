@@ -635,7 +635,7 @@ Möchtest du dein Können verbessern oder suchst du einfach nur eine Herausforde
       </div>
       <div class="box">
         <span></span>
-        <div class="content">
+        <div class="content" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;">
           <h2 class="en_lang">Tournaments</h2>
           <p class="en_lang">Join against players and pros in regular Tournaments
           </p>
@@ -645,8 +645,86 @@ Möchtest du dein Können verbessern oder suchst du einfach nur eine Herausforde
           </p>
         </div>
       </div>
+      
     </div>
   </div>
+ 
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Tournament Companion Request</h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+     
+        <div class="mb-4">
+          <label for="exampleFormControlTextarea1" class="form-label">Select date</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Date</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Link</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Optional details</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="clay btn btn-warning">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .modal-dialog{
+    border-style: solid;
+  border-color: #ff6e30;
+  border-radius: 25px;
+  background-color: transparent;
+  }
+  .modal-content{
+    border-radius: 25px;
+    background-color:#0112317a;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  }
+  label{
+    font-size: 15px;
+  }
+  textarea{
+    background-color:#0112317a !important;  
+    color: #ffff  !important;
+  }
+  option{
+    background-color:#0112317a !important; 
+    color: #ffff !important; 
+  }
+  select{
+    background-color:#0112317a !important;   
+    color: #ffff !important;
+  }
+  .modal-footer{
+    border-bottom: none;
+  }
+  .modal-dialog{
+    top: 40px !important;
+  }
+</style>
+   
+ 
+
  
  
   
